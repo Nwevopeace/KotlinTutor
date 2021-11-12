@@ -1,0 +1,909 @@
+<resources>
+    <string name="app_name">Kotlin Tutor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="kotlintutor">KotlinTutor</string>
+    <string name="a_simple_app_that_teaches_kotlin_fundamentals">A simple App that teaches Kotlin fundamentals.</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="topic">Topic</string>
+    <string name="description">Description</string>
+    <string name="list_of_topics">List of Topics</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="create_account_with_kotlintutor">Create an Account With KotlinTutor</string>
+
+    <!--    <string name="Detail1">What is Kotlin?-->
+    <!--    \nKotlin is a modern, trending programming language that was released in 2016 by JetBrains.-->
+    <!--    \n\n-->
+    <!--    It has become very popular since it is compatible with Java (one of the most popular programming languages out there), which means that Java code (and libraries) can be used in Kotlin programs.-->
+    <!--    \n\n-->
+    <!--    Kotlin is used for:-->
+    <!--    \n\n-->
+    <!--    Mobile applications (specially Android apps)-->
+    <!--    Web development-->
+    <!--    Server side applications-->
+    <!--    Data science-->
+    <!--    And much, much more!-->
+    <!--        \n\n-->
+    <!--        Why Use Kotlin?-->
+    <!--    Kotlin is fully compatible with Java-->
+    <!--    Kotlin works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)-->
+    <!--    Kotlin is concise and safe-->
+    <!--    Kotlin is easy to learn, especially if you already know Java-->
+    <!--    Kotlin is free to use-->
+    <!--    Big community/support-->
+    <!--    </string>-->
+
+    <!--    <string name="Detail2">Variables are containers for storing data values.-->
+    <!--\n\n-->
+    <!--To create a variable, use var or val, and assign a value to it with the equal sign (=):-->
+    <!--        \nThe difference between var and val is that variables declared with the var keyword can be changed/modified, while val variables cannot.-->
+    <!--\n\n-->
+    <!--Variable Type-->
+    <!--Unlike many other programming languages, variables in Kotlin do not need to be declared with a specified type (like "String" for text or "Int" for numbers, if you are familiar with those).-->
+    <!--\n\n-->
+    <!--To create a variable in Kotlin that should store text and another that should store a number, look at the following example:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var name = "John"      // String (text)-->
+    <!--val birthyear = 1975   // Int (number)-->
+    <!--\n\n-->
+    <!--println(name)          // Print the value of name-->
+    <!--println(birthyear)     // Print the value of birthyear-->
+    <!--</string>-->
+
+    <!--    <string name="Detail3">Comments can be used to explain Kotlin code, and to make it more readable. It can also be used to prevent execution when testing alternative code.-->
+    <!--\n\n-->
+    <!--Single-line Comments-->
+    <!--Single-line comments starts with two forward slashes (//).-->
+    <!--\n\n-->
+    <!--Any text between // and the end of the line is ignored by Kotlin (will not be executed).-->
+    <!--\n\n-->
+    <!--This example uses a single-line comment before a line of code:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--// This is a comment-->
+    <!--println("Hello World")-->
+    <!--</string>-->
+
+    <!--    <string name="Detail4">In Kotlin, the type of a variable is decided by its value:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myNum = 5             // Int-->
+    <!--val myDoubleNum = 5.99    // Double-->
+    <!--val myLetter = \'D\'        // Char-->
+    <!--val myBoolean = true      // Boolean-->
+    <!--val myText = "Hello"      // String-->
+    <!--\n\n-->
+    <!--   \n     Sometimes you have to specify the type, and often you don\'t. Anyhow, it is good to know what the different types represent.-->
+    <!--\n\n-->
+    <!--You will learn more about when you need to specify the type later.-->
+    <!--\n\n-->
+    <!--Data types are divided into different groups:-->
+    <!--\n\n-->
+    <!--Numbers-->
+    <!--Characters-->
+    <!--Booleans-->
+    <!--Strings-->
+    <!--Arrays-->
+    <!--Numbers-->
+    <!--Number types are divided into two groups:-->
+    <!--\n\n-->
+    <!--Integer types store whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are Byte, Short, Int and Long.-->
+    <!--\n\n-->
+    <!--Floating point types represent numbers with a fractional part, containing one or more decimals. There are two types: Float and Double.-->
+    <!--\n\n-->
+    <!--If you don\'t specify the type for a numeric variable, it is most often returned as Int for whole numbers and Double for floating point numbers.-->
+    <!--\n\n-->
+    <!--Integer Types-->
+    <!--Byte-->
+    <!--The Byte data type can store whole numbers from -128 to 127. This can be used instead of Int or other integer types to save memory when you are certain that the value will be within -128 and 127:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myNum: Byte = 100-->
+    <!--println(myNum)-->
+    <!--Short-->
+    <!--The Short data type can store whole numbers from -32768 to 32767:-->
+
+    <!--Example-->
+    <!--val myNum: Short = 5000-->
+    <!--println(myNum)-->
+    <!--Int-->
+    <!--The Int data type can store whole numbers from -2147483648 to 2147483647:-->
+
+    <!--Example-->
+    <!--val myNum: Int = 100000-->
+    <!--println(myNum)-->
+    <!--Long-->
+    <!--The Long data type can store whole numbers from -9223372036854775808 to 9223372036854775808. This is used when Int is not large enough to store the value. Optionally, you can end the value with an "L":-->
+
+    <!--Example-->
+    <!--val myNum: Long = 15000000000L-->
+    <!--println(myNum)-->
+    <!--Difference Between Int and Long-->
+    <!--A whole number is an Int as long as it is up to 2147483647. If it goes beyond that, it is defined as Long:-->
+
+    <!--Example-->
+    <!--val myNum1 = 2147483647  // Int-->
+    <!--val myNum2 = 2147483648  // Long-->
+    <!--Floating Point Types-->
+    <!--Floating point types represent numbers with a decimal, such as 9.99 or 3.14515.-->
+
+    <!--Float-->
+    <!--The Float data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "F":-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myNum: Float = 5.75F-->
+    <!--println(myNum)-->
+    <!--Double-->
+    <!--The Double data type can store fractional numbers from 1.7e−308 to 1.7e+038:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myNum: Double = 19.99-->
+    <!--println(myNum)-->
+    <!--Use Float or Double?-->
+    <!--\n\n-->
+    <!--The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of Float is only six or seven decimal digits, while Double variables have a precision of about 15 digits. Therefore it is safer to use Double for most calculations.-->
+    <!--\n\n-->
+    <!--Scientific Numbers-->
+    <!--A floating point number can also be a scientific number with an "e" or "E" to indicate the power of 10:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myNum1: Float = 35E3F-->
+    <!--val myNum2: Double = 12E4-->
+    <!--println(myNum1)-->
+    <!--println(myNum2)-->
+    <!--Booleans-->
+    <!--The Boolean data type and can only take the values true or false:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val isKotlinFun: Boolean = true-->
+    <!--val isFishTasty: Boolean = false-->
+    <!--println(isKotlinFun)   // Outputs true-->
+    <!--println(isFishTasty)   // Outputs false-->
+    <!--Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.-->
+    <!--\n\n-->
+    <!--Characters-->
+    <!--The Char data type is used to store a single character. A char value must be surrounded by single quotes, like 'A' or 'c':-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myGrade: Char = 'B'-->
+    <!--println(myGrade)-->
+    <!--Unlike Java, you cannot use ASCII values to display certain characters. The value 66 would output a "B" in Java, but will generate an error in Kotlin:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myLetter: Char = 66-->
+    <!--println(myLetter) // Error-->
+    <!--Strings-->
+    <!--The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val myText: String = "Hello World"-->
+    <!--println(myText)-->
+    <!--You will learn more about strings in the Strings chapter.-->
+    <!--\n\n-->
+    <!--Arrays-->
+    <!--Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.-->
+    <!--\n\n-->
+    <!--You will learn more about arrays in the Arrays chapter.-->
+    <!--\n\n-->
+    <!--Type Conversion-->
+    <!--Type conversion is when you convert the value of one data type to another type.-->
+    <!--\n\n-->
+    <!--In Kotlin, numeric type conversion is different from Java. For example, it is not possible to convert an Int type to a Long type with the following code:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val x: Int = 5-->
+    <!--val y: Long = x-->
+    <!--println(y) // Error: Type mismatch-->
+    <!--To convert a numeric data type to another type, you must use one of the following functions: toByte(), toShort(), toInt(), toLong(), toFloat(), toDouble() or toChar():-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val x: Int = 5-->
+    <!--val y: Long = x.toLong()-->
+    <!--println(y)-->
+
+    <!--</string>-->
+
+    <!--    <string name="Detail5"><![CDATA[Operators are used to perform operations on variables and values.-->
+    <!--\n\n-->
+    <!--The value is called an operand, while the operation (to be performed between the two operands) is defined by an operator:-->
+    <!--\n\n-->
+    <!--Operand	Operator	Operand-->
+    <!--100	+	50-->
+    <!--In the example below, the numbers 100 and 50 are operands, and the + sign is an operator:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var x = 100 + 50-->
+    <!--Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and a variable:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var sum1 = 100 + 50       // 150 (100 + 50)-->
+    <!--var sum2 = sum1 + 250     // 400 (150 + 250)-->
+    <!--var sum3 = sum2 + sum2    // 800 (400 + 400)-->
+    <!--Kotlin divides the operators into the following groups:-->
+    <!--\n\n-->
+    <!--Arithmetic operators-->
+    <!--Assignment operators-->
+    <!--Comparison operators-->
+    <!--Logical operators-->
+    <!--Arithmetic Operators-->
+    <!--Arithmetic operators are used to perform common mathematical operations.-->
+    <!--\n\n-->
+    <!--Operator	Name	Description	Example	Try it-->
+    <!--+	Addition	Adds together two values	x + y-->
+    <!-- -	Subtraction	Subtracts one value from another	x - y-->
+    <!--*	Multiplication	Multiplies two values	x * y-->
+    <!--/	Division	Divides one value from another	x / y-->
+    <!--%	Modulus	Returns the division remainder	x % y-->
+    <!--++	Increment	Increases the value by 1	++x-->
+    <!--—	Decrement	Decreases the value by 1	—x-->
+    <!--Kotlin Assignment Operators-->
+    <!--Assignment operators are used to assign values to variables.-->
+    <!--\n\n-->
+    <!--In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var x = 10-->
+    <!--The addition assignment operator (+=) adds a value to a variable:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var x = 10-->
+    <!--x += 5-->
+    <!--A list of all assignment operators:-->
+    <!--\n\n-->
+    <!--Operator	Example	Same As	Try it-->
+    <!--=	x = 5	x = 5-->
+    <!--+=	x += 3	x = x + 3-->
+    <!-- -=	x -= 3	x = x - 3-->
+    <!--*=	x *= 3	x = x * 3-->
+    <!--/=	x /= 3	x = x / 3-->
+    <!--%=	x %= 3	x = x % 3-->
+    <!--Kotlin Comparison Operators-->
+    <!--Comparison operators are used to compare two values, and returns a Boolean value: either true or false.-->
+    <!--\n\n-->
+    <!--Operator	Name	Example	Try it-->
+    <!--==	Equal to	x == y-->
+    <!--!=	Not equal	x != y-->
+    <!--&gt;	Greater than	x > y-->
+    <!--    ]]></string>-->
+
+    <!--    <string name="Detail6">Arrays are used to store multiple values in a single variable, instead of creating separate variables for each value.-->
+    <!--\n\n-->
+    <!--To create an array, use the arrayOf() function, and place the values in a comma-separated list inside it:-->
+    <!--\n\n-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--Access the Elements of an Array-->
+    <!--You can access an array element by referring to the index number, inside square brackets.-->
+    <!--\n\n-->
+    <!--In this example, we access the value of the first element in cars:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--println(cars[0])-->
+    <!--// Outputs Volvo-->
+    <!--Note: Just like with Strings, Array indexes start with 0: [0] is the first element. [1] is the second element, etc.-->
+    <!--\n\n-->
+    <!--Change an Array Element-->
+    <!--To change the value of a specific element, refer to the index number:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--cars[0] = "Opel"-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--cars[0] = "Opel"-->
+    <!--println(cars[0])-->
+    <!--// Now outputs Opel instead of Volvo-->
+    <!--Array Length / Size-->
+    <!--To find out how many elements an array have, use the size property:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--println(cars.size)-->
+    <!--// Outputs 4-->
+    <!--Check if an Element Exists-->
+    <!--You can use the in operator to check if an element exists in an array:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--if ("Volvo" in cars) {-->
+    <!--  println("It exists!")-->
+    <!--} else {-->
+    <!--  println("It does not exist.")-->
+    <!--}-->
+    <!--Loop Through an Array-->
+    <!--Often when you work with arrays, you need to loop through all of the elements.-->
+    <!--\n\n-->
+    <!--You can loop through the array elements with the for loop, which you will learn even more about in the next chapter.-->
+    <!--\n\n-->
+    <!--The following example outputs all elements in the cars array:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--for (x in cars) {-->
+    <!--  println(x)-->
+    <!--}-->
+    <!--</string>-->
+
+    <!--    <string name="Detail7">With the for loop, you can also create ranges of values with "..":-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Print the whole alphabet:-->
+    <!--\n\n-->
+    <!--for (chars in \'a\'..\'x\') {-->
+    <!--  println(chars)-->
+    <!--}-->
+    <!--You can also create ranges of numbers:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--for (nums in 5..15) {-->
+    <!--  println(nums)-->
+    <!--}-->
+    <!--Note: The first and last value is included in the range.-->
+    <!--\n\n-->
+    <!--Check if a Value Exists-->
+    <!--You can also use the in operator to check if a value exists in a range:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val nums = arrayOf(2, 4, 6, 8)-->
+    <!--if (2 in nums) {-->
+    <!--  println("It exists!")-->
+    <!--} else {-->
+    <!--  println("It does not exist.")-->
+    <!--}-->
+    <!--Example-->
+    <!--val cars = arrayOf("Volvo", "BMW", "Ford", "Mazda")-->
+    <!--if ("Volvo" in cars) {-->
+    <!--  println("It exists!")-->
+    <!--} else {-->
+    <!--  println("It does not exist.")-->
+    <!--}-->
+    <!--Break or Continue a Range-->
+    <!--You can also use the break and continue keywords in a range/for loop:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Stop the loop when nums is equal to 10:-->
+    <!--\n\n-->
+    <!--for (nums in 5..15) {-->
+    <!--  if (nums == 10) {-->
+    <!--    break-->
+    <!--  }-->
+    <!--  println(nums)-->
+    <!--}-->
+    <!--Example-->
+    <!--Skip the value of 10 in the loop, and continue with the next iteration:-->
+    <!--\n\n-->
+    <!--for (nums in 5..15) {-->
+    <!--  if (nums == 10) {-->
+    <!--    continue-->
+    <!--  }-->
+    <!--  println(nums)-->
+    <!--}-->
+    <!--</string>-->
+
+    <!--    <string name="Detail8">Strings are used for storing text.-->
+    <!--\n\n-->
+    <!--A string contains a collection of characters surrounded by double quotes:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var greeting = "Hello"-->
+    <!--Unlike Java, you do not have to specify that the variable should be a String. Kotlin is smart enough to understand that the greeting variable in the example above is a String because of the double quotes.-->
+    <!--\n\n-->
+    <!--However, just like with other data types, you can specify the type if you insist:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var greeting: String = "Hello"-->
+    <!--Note: If you want to create a String without assigning the value (and assign the value later), you must specify the type while declaring the variable:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--This works fine:-->
+    <!--\n\n-->
+    <!--var name: String-->
+    <!--name = "John"-->
+    <!--println(name)-->
+    <!--Example-->
+    <!--This will generate an error:-->
+    <!--\n\n-->
+    <!--var name-->
+    <!--name = "John"-->
+    <!--println(name)-->
+    <!--Access a String-->
+    <!--To access the characters (elements) of a string, you must refer to the index number inside square brackets.-->
+    <!--\n\n-->
+    <!--String indexes start with 0. In the example below, we access the first and third element in txt:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt = "Hello World"-->
+    <!--println(txt[0]) // first element (H)-->
+    <!--println(txt[2]) // third element (l)-->
+    <!--[0] is the first element. [1] is the second element, [2] is the third element, etc.-->
+    <!--\n\n-->
+    <!--String Length-->
+    <!--A String in Kotlin is an object, which contain properties and functions that can perform certain operations on strings, by writing a dot character (.) after the specific string variable. For example, the length of a string can be found with the length property:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+    <!--println("The length of the txt string is: " + txt.length)-->
+    <!--String Functions-->
+    <!--There are many string functions available, for example toUpperCase() and toLowerCase():-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt = "Hello World"-->
+    <!--println(txt.toUpperCase())   // Outputs "HELLO WORLD"-->
+    <!--println(txt.toLowerCase())   // Outputs "hello world"-->
+    <!--Comparing Strings-->
+    <!--The compareTo(string) function compares two strings and returns 0 if both are equal:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt1 = "Hello World"-->
+    <!--var txt2 = "Hello World"-->
+    <!--println(txt1.compareTo(txt2))  // Outputs 0 (they are equal)-->
+    <!--Finding a String in a String-->
+    <!--The indexOf() function returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt = "Please locate where 'locate' occurs!"-->
+    <!--println(txt.indexOf("locate"))  // Outputs 7-->
+    <!--Remember that Kotlin counts positions from zero.-->
+    <!--0 is the first position in a string, 1 is the second, 2 is the third …-->
+    <!--\n\n-->
+    <!--Quotes Inside a String-->
+    <!--To use quotes inside a string, use single quotes ('):-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var txt1 = "It's alright"-->
+    <!--var txt2 = "That's great"-->
+    <!--String Concatenation-->
+    <!--The + operator can be used between strings to add them together to make a new string. This is called concatenation:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var firstName = "John"-->
+    <!--var lastName = "Doe"-->
+    <!--println(firstName + " " + lastName)-->
+    <!--Note that we have added an empty text (" ") to create a space between firstName and lastName on print.-->
+    <!--\n\n-->
+    <!--You can also use the plus() function to concatenate two strings:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var firstName = "John "-->
+    <!--var lastName = "Doe"-->
+    <!--println(firstName.plus(lastName))-->
+    <!--String Templates/Interpolation-->
+    <!--Instead of concatenation, you can also use "string templates", which is an easy way to add variables and expressions inside a string.-->
+    <!--\n\n-->
+    <!--Just refer to the variable with the $ symbol:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--var firstName = "John"-->
+    <!--var lastName = "Doe"-->
+    <!--println("My name is $firstName $lastName")-->
+    <!--"String Templates" is a popular feature of Kotlin, as it reduces the amount of code. For example, you do not have to specify a whitespace between firstName and lastName, like we did in the concatenation example.</string>-->
+    <!--    <string name="Detail9">Very often, in programming, you will need a data type that can only have one of two values, like:-->
+    <!--\n\n-->
+    <!--YES / NO-->
+    <!--ON / OFF-->
+    <!--TRUE / FALSE-->
+    <!--For this, Kotlin has a Boolean data type, which can take the values true or false.-->
+    <!--\n\n-->
+    <!--Boolean Values-->
+    <!--A boolean type can be declared with the Boolean keyword and can only take the values true or false:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val isKotlinFun: Boolean = true-->
+    <!--val isFishTasty: Boolean = false-->
+    <!--println(isKotlinFun)   // Outputs true-->
+    <!--println(isFishTasty)   // Outputs false-->
+    <!--Just like you have learned with other data types in the previous chapters, the example above can also be written without specifying the type, as Kotlin is smart enough to understand that the variables are Booleans:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val isKotlinFun = true-->
+    <!--val isFishTasty = false-->
+    <!--println(isKotlinFun)   // Outputs true-->
+    <!--println(isFishTasty)   // Outputs false-->
+    <!--Boolean Expression-->
+    <!--A Boolean expression returns a Boolean value: true or false.-->
+    <!--\n\n-->
+    <!--You can use a comparison operator, such as the greater than (>) operator to find out if an expression (or a variable) is true:-->
+
+    <!--Example-->
+    <!--val x = 10-->
+    <!--val y = 9-->
+    <!--println(x > y) // Returns true, because 10 is greater than 9-->
+    <!--Or even easier:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--println(10 > 9) // Returns true, because 10 is greater than 9-->
+    <!--In the examples below, we use the equal to (==) operator to evaluate an expression:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val x = 10;-->
+    <!--println(x == 10); // Returns true, because the value of x is equal to 10-->
+    <!--Example-->
+    <!--println(10 == 15); // Returns false, because 10 is not equal to 15-->
+    <!--The Boolean value of an expression is the basis for all Kotlin comparisons and conditions.-->
+    <!--\n\n-->
+    <!--You will learn more about conditions in the next chapter.</string>-->
+    <!--    <string name="Detail10">A function is a block of code which only runs when it is called.-->
+    <!--\n\n-->
+    <!--You can pass data, known as parameters, into a function.-->
+    <!--\n\n-->
+    <!--Functions are used to perform certain actions, and they are also known as methods.-->
+    <!--\n\n-->
+    <!--Predefined Functions-->
+    <!--So it turns out you already know what a function is. You have been using it the whole time through this tutorial!-->
+    <!--\n\n-->
+    <!--For example, println() is a function. It is used to output/print text to the screen:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun main() {-->
+    <!--  println("Hello World")-->
+    <!--}-->
+    <!--Create Your Own Functions-->
+    <!--To create your own function, use the fun keyword, and write the name of the function, followed by parantheses ():-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Create a function named "myFunction" that should output some text:-->
+    <!--\n\n-->
+    <!--fun myFunction() {-->
+    <!--  println("I just got executed!")-->
+    <!--}-->
+    <!--Call a Function-->
+    <!--Now that you have created a function, you can execute it by calling it.-->
+    <!--\n\n-->
+    <!--To call a function in Kotlin, write the name of the function followed by two parantheses ().-->
+    <!--\n\n-->
+    <!--In the following example, myFunction() will print some text (the action), when it is called:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun main() {-->
+    <!--  myFunction() // Call myFunction-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// Outputs "I just got executed!"-->
+    <!--A function can be called multiple times, if you want:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun main() {-->
+    <!--  myFunction()-->
+    <!--  myFunction()-->
+    <!--  myFunction()-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// I just got executed!-->
+    <!--// I just got executed!-->
+    <!--// I just got executed!-->
+    <!--Function Parameters-->
+    <!--Information can be passed to functions as parameter.-->
+    <!--\n\n-->
+    <!--Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma. Just note that you must specify the type of each parameter (Int, String, etc).-->
+    <!--\n\n-->
+    <!--The following example has a function that takes a String called fname as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun myFunction(fname: String) {-->
+    <!--  println(fname + " Doe")-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  myFunction("John")-->
+    <!--  myFunction("Jane")-->
+    <!--  myFunction("George")-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// John Doe-->
+    <!--// Jane Doe-->
+    <!--// George Doe-->
+    <!--When a parameter is passed to the function, it is called an argument. So, from the example above: fname is a parameter, while John, Jane and George are arguments.-->
+    <!--\n\n-->
+    <!--Multiple Parameters-->
+    <!--You can have as many parameters as you like:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun myFunction(fname: String, age: Int) {-->
+    <!--  println(fname + " is " + age)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  myFunction("John", 35)-->
+    <!--  myFunction("Jane", 32)-->
+    <!--  myFunction("George", 15)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// John is 35-->
+    <!--// Jane is 32-->
+    <!--// George is 15-->
+    <!--Note: When working with multiple parameters, the function call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.-->
+    <!--\n\n-->
+    <!--Return Values-->
+    <!--In the examples above, we used functions to output a value. In the following example, we will use a function to return a value and assign it to a variable.-->
+    <!--\n\n-->
+    <!--To return a value, use the return keyword, and specify the return type after the function's parantheses (Int in this example):-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--A function with one Int parameter, and Int return type:-->
+    <!--\n\n-->
+    <!--fun myFunction(x: Int): Int {-->
+    <!--  return (x + 5)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  var result = myFunction(3)-->
+    <!--  println(result)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// 8 (3 + 5)-->
+    <!--Using two parameters:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--A function with two Int parameters, and Int return type:-->
+    <!--\n\n-->
+    <!--fun myFunction(x: Int, y: Int): Int {-->
+    <!--  return (x + y)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  var result = myFunction(3, 5)-->
+    <!--  println(result)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// 8 (3 + 5)-->
+    <!--Shorter Syntax for Return Values-->
+    <!--There is also a shorter syntax for returning values. You can use the = operator instead of return without specifying the return type. Kotlin is smart enough to automatically find out what it is:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--fun myFunction(x: Int, y: Int) = x + y-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  var result = myFunction(3, 5)-->
+    <!--  println(result)-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// 8 (3 + 5)-->
+    <!--</string>-->
+    <!--    <string name="Detail11">Everything in Kotlin is associated with classes and objects, along with its properties and functions. For example: in real life, a car is an object. The car has properties, such as brand, weight and color, and functions, such as drive and brake.-->
+    <!--\n\n-->
+    <!--A Class is like an object constructor, or a "blueprint" for creating objects.-->
+    <!--\n\n-->
+    <!--Create a Class-->
+    <!--To create a class, use the class keyword, and specify the name of the class:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Create a Car class along with some properties (brand, model and year)-->
+    <!--\n\n-->
+    <!--class Car {-->
+    <!--  var brand = ""-->
+    <!--  var model = ""-->
+    <!--  var year = 0-->
+    <!--}-->
+    <!--A property is basically a variable that belongs to the class.-->
+    <!--\n\n-->
+    <!--Good to Know: It is considered good practice to start the name of a class with an upper case letter, for better organization.-->
+    <!--\n\n-->
+    <!--Create an Object-->
+    <!--Now we can use the class named Car to create objects.-->
+    <!--\n\n-->
+    <!--In the example below, we create an object of Car called c1, and then we access the properties of c1 by using the dot syntax (.), just like we did to access array and string properties:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--// Create a c1 object of the Car class-->
+    <!--val c1 = Car()-->
+    <!--\n\n-->
+    <!--// Access the properties and add some values to it-->
+    <!--c1.brand = "Ford"-->
+    <!--c1.model = "Mustang"-->
+    <!--c1.year = 1969-->
+    <!--\n\n-->
+    <!--println(c1.brand)   // Outputs Ford-->
+    <!--println(c1.model)   // Outputs Mustang-->
+    <!--println(c1.year)    // Outputs 1969-->
+    <!--Multiple Objects-->
+    <!--You can create multiple objects of one class:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--val c1 = Car()-->
+    <!--c1.brand = "Ford"-->
+    <!--c1.model = "Mustang"-->
+    <!--c1.year = 1969-->
+    <!--\n\n-->
+    <!--val c2 = Car()-->
+    <!--c2.brand = "BMW"-->
+    <!--c2.model = "X5"-->
+    <!--c2.year = 1999-->
+    <!--\n\n-->
+    <!--println(c1.brand)  // Ford-->
+    <!--println(c2.brand)  // BMW-->
+    <!--</string>-->
+    <!--    <string name="Detail12">You can also use functions inside a class, to perfom certain actions:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Create a drive() function inside the Car class and call it:-->
+    <!--\n\n-->
+    <!--class Car(var brand: String, var model: String, var year: Int) {-->
+    <!--  // Class function-->
+    <!--  fun drive() {-->
+    <!--    println("Wrooom!")-->
+    <!--  }-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  val c1 = Car("Ford", "Mustang", 1969)-->
+    <!--\n\n-->
+    <!--  // Call the function-->
+    <!--  c1.drive()-->
+    <!--}-->
+    <!--Tip: When a function is declared inside a class, it is known as a class function, or member function.-->
+    <!--\n\n-->
+    <!--Note: When an object of the class is created, it has access to all of the class functions.-->
+    <!--\n\n-->
+    <!--Class Function Parameters-->
+    <!--Just like with regular functions, you can pass parameters to a class function:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--Create two functions: drive() and speed(), and pass parameters to the speed() function:-->
+
+    <!--c\n\nlass Car(var brand: String, var model: String, var year: Int) {-->
+    <!--  // Class function-->
+    <!--  fun drive() {-->
+    <!--    println("Wrooom!")-->
+    <!--  }-->
+    <!--\n\n-->
+    <!--  // Class function with parameters-->
+    <!--  fun speed(maxSpeed: Int) {-->
+    <!--    println("Max speed is: " + maxSpeed)-->
+    <!--  }-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  val c1 = Car("Ford", "Mustang", 1969)-->
+    <!--\n\n-->
+    <!--  // Call the functions-->
+    <!--  c1.drive()-->
+    <!--  c1.speed(200)-->
+    <!--}</string>-->
+    <!--    <string name="Detail13">In the previous chapter, we created an object of a class, and specified the properties inside the class, like this:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--class Car {-->
+    <!--  var brand = ""-->
+    <!--  var model = ""-->
+    <!--  var year = 0-->
+    <!--}-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  val c1 = Car()-->
+    <!--  c1.brand = "Ford"-->
+    <!--  c1.model = "Mustang"-->
+    <!--  c1.year = 1969-->
+    <!--}-->
+    <!--In Kotlin, there\'s a faster way of doing this, by using a constructor.-->
+    <!--\n\n-->
+    <!--A constructor is like a special function, and it is defined by using two parantheses () after the class name. You can specify the properties inside of the parantheses (like passing parameters into a regular function).-->
+    <!--\n\n-->
+    <!--The constructor will initialize the properties when you create an object of a class. Just remember to specify the type of the property/variable:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--class Car(var brand: String, var model: String, var year: Int)-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  val c1 = Car("Ford", "Mustang", 1969)-->
+    <!--}-->
+    <!--Now it's even easier to specify multiple objects of one class:-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--class Car(var brand: String, var model: String, var year: Int)-->
+    <!--\n\n-->
+    <!--fun main() {-->
+    <!--  val c1 = Car("Ford", "Mustang", 1969)-->
+    <!--  val c2 = Car("BMW", "X5", 1999)-->
+    <!--  val c3 = Car("Tesla", "Model S", 2020)-->
+    <!--}</string>-->
+    <!--    <string name="Detail14">In Kotlin, it is possible to inherit class properties and functions from one class to another. We group the "inheritance concept" into two categories:-->
+    <!--\n\n-->
+    <!--subclass (child) - the class that inherits from another class-->
+    <!--superclass (parent) - the class being inherited from-->
+    <!--In the example below, MyChildClass (subclass) inherits the properties from the MyParentClass class (superclass):-->
+    <!--\n\n-->
+    <!--Example-->
+    <!--// Superclass-->
+    <!--open class MyParentClass {-->
+    <!--  val x = 5-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// Subclass-->
+    <!--class MyChildClass: MyParentClass() {-->
+    <!--  fun myFunction() {-->
+    <!--    println(x) // x is now inherited from the superclass-->
+    <!--  }-->
+    <!--}-->
+    <!--\n\n-->
+    <!--// Create an object of MyChildClass and call myFunction-->
+    <!--fun main() {-->
+    <!--  val myObj = MyChildClass()-->
+    <!--  myObj.myFunction()-->
+    <!--}-->
+    <!--Example Explained-->
+    <!--Use the open keyword in front of the superclass/parent, to make this the class other classes should inherit properties and functions from.-->
+    <!--\n\n-->
+    <!--To inherit from a class, specify the name of the subclass, followed by a colon :, and then the name of the superclass.-->
+    <!--\n\n-->
+    <!--Why And When To Use "Inheritance"?-->
+    <!-- - It is useful for code reusability: reuse properties and functions of an existing class when you create a new class.</string>-->
+    <!--    <string name="Detail15">OOP stands for Object-Oriented Programming.-->
+    <!--\n\n-->
+    <!--Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.-->
+    <!--\n\n-->
+    <!--Object-oriented programming has several advantages over procedural programming:-->
+    <!--\n\n-->
+    <!--OOP is faster and easier to execute-->
+    <!--OOP provides a clear structure for the programs-->
+    <!--OOP helps to keep the Kotlin code DRY "Don\'t Repeat Yourself", and makes the code easier to maintain, modify and debug-->
+    <!--OOP makes it possible to create full reusable applications with less code and shorter development time-->
+    <!--Tip: The "Don\'t Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.-->
+    <!--\n\n-->
+    <!--Kotlin - What are Classes and Objects?-->
+    <!--Classes and objects are the two main aspects of object-oriented programming.-->
+    <!--\n\n-->
+    <!--Look at the following illustration to see the difference between class and objects:-->
+    <!--\n\n-->
+    <!--class-->
+    <!--Fruit-->
+    <!--\n\n-->
+    <!--objects-->
+    <!--Apple-->
+    <!--\n\n-->
+    <!--Banana-->
+    <!--\n\n-->
+    <!--Mango-->
+    <!--\n\n-->
+    <!--Another example:-->
+    <!--\n\n-->
+    <!--class-->
+    <!--Car-->
+    <!--\n\n-->
+    <!--objects-->
+    <!--Volvo-->
+    <!--\n\n-->
+    <!--Audi-->
+    <!--\n\n-->
+    <!--Toyota-->
+    <!--\n\n-->
+    <!--So, a class is a template for objects, and an object is an instance of a class.-->
+    <!--\n\n-->
+    <!--When the individual objects are created, they inherit all the variables and methods from the class.-->
+    <!--\n\n-->
+    <!--You will learn much more about classes and objects in the next chapter.-->
+    <!--</string>-->
+
+    <string name="Lesson1">Kotlin Introduction</string>
+    <string name="Lesson2">Kotlin Variables</string>
+    <string name="Lesson3">Kotlin Comments</string>
+    <string name="Lesson4">Kotlin Data Types</string>
+    <string name="Lesson5">Kotlin Operators</string>
+    <string name="Lesson6">Kotlin Arrays</string>
+    <string name="Lesson7">Kotlin Ranges</string>
+    <string name="Lesson8">Kotlin Strings</string>
+    <string name="Lesson9">Kotlin Booleans</string>
+    <string name="Lesson10">Kotlin Functions</string>
+    <string name="Lesson11">Kotlin Classes and Objects</string>
+    <string name="Lesson12">Kotlin Class Functions</string>
+    <string name="Lesson13">Kotlin Constructors</string>
+    <string name="Lesson14">Kotlin Inheritance</string>
+    <string name="Lesson15">Kotlin OOP</string>
+    <string name="images">images</string>
+    <string name="on_board_text">Kotlin is a modern, trending programming language.
+        \n\nKotlin is easy to learn especially if you already know java (it is 100% compatible with Java)
+        \n\nKotlin is used to develop android Apps, server side apps and much more.</string>
+    <string name="start_learning_kotlin_now"><![CDATA[Start Learning Kotlin now >>]]></string>
+    <string name="learn_kotlin">Learn Kotlin</string>
+
+</resources>

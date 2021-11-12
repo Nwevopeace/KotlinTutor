@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/listOfTopicsFragment"
+            android:icon="@drawable/ic_list"
+            android:iconTint="@color/teal_200"
+            android:title="@string/list_of_topics" />
+
+        <item
+            android:id="@+id/signInFragment"
+            android:icon="@drawable/ic_reg"
+            android:iconTint="@color/teal_200"
+            android:title="@string/sign_in_text"/>
+
+        <item
+            android:id="@+id/signOut"
+            android:icon="@drawable/ic_exit"
+            android:iconTint="@color/teal_200"
+            android:title="@string/sign_out"/>
+
+    </group>
+</menu>
