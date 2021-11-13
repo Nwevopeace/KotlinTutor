@@ -24,7 +24,11 @@
         android:id="@+id/listOfTopicsFragment"
         android:name="com.peacecodes.kotlintutor.fragments.ListOfTopicsFragment"
         android:label="List of Topics"
-        tools:layout="@layout/fragment_list_of_topics" />
+        tools:layout="@layout/fragment_list_of_topics" >
+        <action
+            android:id="@+id/action_listOfTopicsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <activity
         android:id="@+id/homeScreen"
         android:name="com.peacecodes.kotlintutor.activity.MainActivity"
@@ -48,5 +52,10 @@
             android:id="@+id/action_signUpFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.peacecodes.kotlintutor.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 
 </navigation>
