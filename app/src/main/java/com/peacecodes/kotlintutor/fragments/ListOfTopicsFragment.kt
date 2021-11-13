@@ -15,9 +15,6 @@ import com.peacecodes.kotlintutor.model.KotlinFundamentals
 class ListOfTopicsFragment : Fragment() {
 
     private lateinit var binding: FragmentListOfTopicsBinding
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var myData: List<KotlinFundamentals>
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,10 +29,9 @@ class ListOfTopicsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.recyclerView.apply {
-            myData = DataSource().loadKotlinFundamentals()
-            layoutManager = LinearLayoutManager(activity)
+            layoutManager = LinearLayoutManager(requireContext())
             setHasFixedSize(true)
-            adapter = RecyclerAdapter(this, myData)
+            adapter = RecyclerAdapter(DataSource().loadKotlinFundamentals())
         }
 
     }
