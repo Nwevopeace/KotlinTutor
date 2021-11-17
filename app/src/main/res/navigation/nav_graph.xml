@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment2"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_listOfTopicsFragment"
+            app:destination="@id/listOfTopicsFragment" />
     </fragment>
     <fragment
         android:id="@+id/listOfTopicsFragment"
@@ -36,7 +39,7 @@
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.peacecodes.kotlintutor.OnBoardingFragment"
+        android:name="com.peacecodes.kotlintutor.fragments.OnBoardingFragment"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding" >
         <action
@@ -56,6 +59,16 @@
         android:id="@+id/detailsFragment"
         android:name="com.peacecodes.kotlintutor.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_listOfTopicsFragment"
+            app:destination="@id/listOfTopicsFragment"
+            app:popUpTo="@id/listOfTopicsFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="KotlinFundamentals"
+            app:argType="com.peacecodes.kotlintutor.model.KotlinFundamentals" />
+
+    </fragment>
 
 </navigation>

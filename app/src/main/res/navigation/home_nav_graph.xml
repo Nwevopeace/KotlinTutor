@@ -16,8 +16,8 @@
         android:label="@string/sign_in_text"
         tools:layout="@layout/fragment_sign_in" />
     <fragment
-        android:id="@+id/blankFragment"
-        android:name="com.peacecodes.kotlintutor.BlankFragment"
+        android:id="@+id/detailsFragment"
+        android:name="com.peacecodes.kotlintutor.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
 </navigation>

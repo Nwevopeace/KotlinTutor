@@ -16,7 +16,6 @@ RecyclerView.Adapter<RecyclerAdapter.MyViewholder>(){
     class MyViewholder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
             val topicText = itemView.findViewById<TextView>(R.id.topic_text)
-            val details = itemView.findViewById<TextView>(R.id.detail_text)
 
     }
 
@@ -27,9 +26,8 @@ RecyclerView.Adapter<RecyclerAdapter.MyViewholder>(){
 
     override fun onBindViewHolder(holder: MyViewholder, position: Int) {
        holder.topicText.text = data[position].Topic
-        holder.details.text = data[position].Detail
         holder.itemView.setOnClickListener { view ->
-            val action = ListOfTopicsFragmentDirections.actionListOfTopicsFragmentToDetailsFragment()
+            val action = ListOfTopicsFragmentDirections.actionListOfTopicsFragmentToDetailsFragment(data[position])
             view.findNavController().navigate(action)
         }
     }

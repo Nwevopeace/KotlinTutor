@@ -1,4 +1,4 @@
-package com.peacecodes.kotlintutor
+package com.peacecodes.kotlintutor.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.peacecodes.kotlintutor.R
 import com.peacecodes.kotlintutor.databinding.FragmentOnBoardingBinding
 
 class OnBoardingFragment : Fragment() {
