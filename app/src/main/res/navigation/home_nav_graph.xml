@@ -2,22 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/home_nav_graph"
-    app:startDestination="@id/listOfTopicsFragment">
+    android:id="@+id/home_nav_graph">
 
-    <fragment
-        android:id="@+id/listOfTopicsFragment"
-        android:name="com.peacecodes.kotlintutor.fragments.ListOfTopicsFragment"
-        android:label="@string/list_of_topics"
-        tools:layout="@layout/fragment_list_of_topics" />
-    <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.peacecodes.kotlintutor.fragments.SignInFragment"
-        android:label="@string/sign_in_text"
-        tools:layout="@layout/fragment_sign_in" />
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.peacecodes.kotlintutor.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+
 </navigation>

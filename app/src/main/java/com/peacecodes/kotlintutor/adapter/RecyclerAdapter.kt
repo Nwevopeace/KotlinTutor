@@ -11,20 +11,20 @@ import com.peacecodes.kotlintutor.fragments.ListOfTopicsFragmentDirections
 import com.peacecodes.kotlintutor.model.KotlinFundamentals
 
 class RecyclerAdapter(private val data: List<KotlinFundamentals>) :
-RecyclerView.Adapter<RecyclerAdapter.MyViewholder>(){
+RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>(){
 
-    class MyViewholder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-            val topicText = itemView.findViewById<TextView>(R.id.topic_text)
+            val topicText: TextView = itemView.findViewById(R.id.topic_text)
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewholder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
-        return MyViewholder(adapterLayout)
+        return MyViewHolder(adapterLayout)
     }
 
-    override fun onBindViewHolder(holder: MyViewholder, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
        holder.topicText.text = data[position].Topic
         holder.itemView.setOnClickListener { view ->
             val action = ListOfTopicsFragmentDirections.actionListOfTopicsFragmentToDetailsFragment(data[position])

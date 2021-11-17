@@ -18,7 +18,7 @@ import com.peacecodes.kotlintutor.databinding.ActivityMainBinding
 import com.peacecodes.kotlintutor.databinding.HomeScreenBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: HomeScreenBinding
+    private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private lateinit var navigationView: NavigationView
     private lateinit var drawerLayout: DrawerLayout
@@ -27,15 +27,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = HomeScreenBinding.inflate(layoutInflater)
-//        setTheme(R.style.Theme_KotlinTutor)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setTheme(R.style.Theme_KotlinTutor)
         setContentView(binding.root)
 
         navigationView = binding.navView
         drawerLayout = binding.drawerLayout
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
         //Connecting the drawer with navigation component

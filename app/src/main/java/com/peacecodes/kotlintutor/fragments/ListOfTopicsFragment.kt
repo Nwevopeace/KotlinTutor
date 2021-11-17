@@ -31,7 +31,7 @@ class ListOfTopicsFragment : Fragment() {
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext())
             setHasFixedSize(true)
-            adapter = RecyclerAdapter(DataSource().loadKotlinFundamentals())
+            adapter = RecyclerAdapter(DataSource.loadKotlinFundamentals())
         }
 
     }
