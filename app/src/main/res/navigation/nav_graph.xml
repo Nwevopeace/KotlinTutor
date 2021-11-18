@@ -45,9 +45,6 @@
             app:destination="@id/listOfTopicsFragment"
             app:popUpTo="@id/listOfTopicsFragment"
             app:popUpToInclusive="true"/>
-        <argument
-            android:name="KotlinFundamentals"
-            app:argType="com.peacecodes.kotlintutor.model.KotlinFundamentals" />
 
     </fragment>
 

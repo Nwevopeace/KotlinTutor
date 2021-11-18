@@ -22,24 +22,24 @@
     <string name="sign_out">Sign Out</string>
     <string name="create_account_with_kotlintutor">Create an Account With KotlinTutor</string>
 
-        <string name="Detail1">
+    <string name="Detail1">
         </string>
 
-        <string name="Detail2">
+    <string name="Detail2">
     </string>
 
-        <string name="Detail3">
+    <string name="Detail3">
     </string>
 
-        <string name="Detail4">
+    <string name="Detail4">
     </string>
 
-        <string name="Detail5"></string>
+    <string name="Detail5"></string>
 
-        <string name="Detail6">
+    <string name="Detail6">
     </string>
 
-        <string name="Detail7">
+    <string name="Detail7">
     </string>
 
     <!--    <string name="Detail8">Strings are used for storing text.-->
@@ -139,31 +139,124 @@
     <!--var lastName = "Doe"-->
     <!--println("My name is $firstName $lastName")-->
     <!--"String Templates" is a popular feature of Kotlin, as it reduces the amount of code. For example, you do not have to specify a whitespace between firstName and lastName, like we did in the concatenation example.</string>-->
-<!--        <string name="Detail9"></string>-->
-<!--        <string name="Detail10">-->
-<!--    </string>-->
-<!--        <string name="Detail11">-->
-<!--    </string>-->
-<!--        <string name="Detail12"></string>-->
-<!--        <string name="Detail13"></string>-->
-<!--        <string name="Detail14"></string>-->
-<!--        <string name="Detail15"></string>-->
+    <!--        <string name="Detail9"></string>-->
+    <!--        <string name="Detail10">-->
+    <!--    </string>-->
+    <!--        <string name="Detail11">-->
+    <!--    </string>-->
+    <!--        <string name="Detail12"></string>-->
+    <!--        <string name="Detail13"></string>-->
+    <!--        <string name="Detail14"></string>-->
+    <!--        <string name="Detail15"></string>-->
 
     <string name="Lesson1">Kotlin Introduction</string>
+    <string name="Details1">What is Kotlin?
+Kotlin is a modern, trending programming language that was released in 2016 by <b><i>JetBrains</i></b>.\n
+
+\nIt has become very popular since it is compatible with Java (one of the most popular programming languages out there), which means that Java code (and libraries) can be used in Kotlin programs.
+
+\n\nKotlin is used for:
+
+\n*Mobile applications (specially Android apps)
+\n*Web development
+\n*Server side applications
+\n*Data science
+\n*And much, much more!
+    \n\t\n
+        Why Use Kotlin?\n
+\n*Kotlin is fully compatible with Java
+\n*Kotlin works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+\n*Kotlin is concise and safe
+\nKotlin is easy to learn, especially if you already know Java
+\n*Kotlin is free to use
+\n*Big community/support</string>
     <string name="Lesson2">Kotlin Variables</string>
+
+    <string name="Details2">
+Variables are containers for storing data values.
+
+To create a variable, use var or val, and assign a value to it with the equal sign (=):</string>
+
     <string name="Lesson3">Kotlin Comments</string>
+    <string name="Details3">
+Comments can be used to explain Kotlin code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</string>
+
     <string name="Lesson4">Kotlin Data Types</string>
+    <string name="Details4">
+Very often, in programming, you will need a data type that can only have one of two values, like:
+        \t\n\t
+\nYES / NO
+\nON / OFF
+\nTRUE / FALSE
+\nFor this, Kotlin has a Boolean data type, which can take the values true or false.</string>
+
     <string name="Lesson5">Kotlin Operators</string>
+    <string name="Details5">
+Operators are used to perform operations on variables and values.
+
+The value is called an operand, while the operation (to be performed between the two operands) is defined by an operator:</string>
     <string name="Lesson6">Kotlin Arrays</string>
+    <string name="Details6">Kotlin Arrays
+Arrays are used to store multiple values in a single variable, instead of creating separate variables for each value.
+
+To create an array, use the arrayOf() function, and place the values in a comma-separated list inside it:</string>
+
     <string name="Lesson7">Kotlin Ranges</string>
+    <string name="Details7">Kotlin Ranges
+With the for loop, you can also create ranges of values with "..":</string>
+
     <string name="Lesson8">Kotlin Strings</string>
+    <string name="Details8">
+Strings are used for storing text.
+
+A string contains a collection of characters surrounded by double quotes:</string>
+
     <string name="Lesson9">Kotlin Booleans</string>
+    <string name="Details9">
+Very often, in programming, you will need a data type that can only have one of two values, like:
+        \t\n\t
+\nYES / NO
+\nON / OFF
+\nTRUE / FALSE
+\nFor this, Kotlin has a Boolean data type, which can take the values true or false.</string>
+
     <string name="Lesson10">Kotlin Functions</string>
+    <string name="Details10">
+The println() function is used to output values/print text:\n</string>
+
     <string name="Lesson11">Kotlin Classes and Objects</string>
-    <string name="Lesson12">Kotlin Class Functions</string>
+    <string name="Details11">Kotlin Classes/Objects
+Everything in Kotlin is associated with classes and objects, along with its properties and functions. For example: in real life, a car is an object. The car has properties, such as brand, weight and color, and functions, such as drive and brake.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.</string>
+
+    <string name="Lesson12">Kotlin Syntax</string>
+    <string name="Details12">
+In the previous chapter, we created a Kotlin file called Main.kt, and we used the following code to print "Hello World" to the screen:\n</string>
+
     <string name="Lesson13">Kotlin Constructors</string>
-    <string name="Lesson14">Kotlin Inheritance</string>
+    <string name="Details13">Kotlin Constructor
+In the previous chapter, we created an object of a class, and specified the properties inside the class, like this:</string>
+    <string name="Lesson14">Kotlin Loops</string>
+    <string name="Details14">Loops
+Loops can execute a block of code as long as a specified condition is reached.
+
+Loops are handy because they save time, reduce errors, and they make code more readable.</string>
+
     <string name="Lesson15">Kotlin OOP</string>
+    <string name="Details15">Kotlin - What is OOP?
+OOP stands for Object-Oriented Programming.
+
+Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
+
+Object-oriented programming has several advantages over procedural programming:
+
+OOP is faster and easier to execute
+OOP provides a clear structure for the programs
+OOP helps to keep the Kotlin code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+OOP makes it possible to create full reusable applications with less code and shorter development time
+Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.</string>
+
     <string name="images">images</string>
     <string name="on_board_text">Kotlin is a modern, trending programming language.
         \n\nKotlin is easy to learn especially if you already know java (it is 100% compatible with Java)
